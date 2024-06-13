@@ -14,3 +14,13 @@ Fill in your cross domain in formNode.action
 This will be the hidden field
 
 All the url's to update schould be in the urlsToUpdate array
+
+#how_to_implement
+Create a HTML tag in GTM and wrap the JS file in script tags
+In the file there are two things to change.
+In formNode.action you create the url for the hidden field. Add the cross domain there and make sure this url is also included in GA4 as an domain for the property
+In urlsToUpdate you can add an array of link url's you want to update.
+
+Fire the HTML tag after the GA4 config tag 
+Since there is probably something wrong why this isn's done automatically
+You may want to create a timer trigger to fire this once after 1 second after the page is loaded initially
