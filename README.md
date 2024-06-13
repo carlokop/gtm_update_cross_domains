@@ -9,13 +9,13 @@ The second part of the script will update all url's with geven url's
 
 Make sure you have the url as a cross domain in GA4 otherwise it won't work.
 
-#what_to_change
+# what to change
 Fill in your cross domain in formNode.action
 This will be the hidden field
 
 All the url's to update schould be in the urlsToUpdate array
 
-#how_to_implement
+# how to implement
 Create a HTML tag in GTM and wrap the JS file in script tags
 In the file there are two things to change.
 In formNode.action you create the url for the hidden field. Add the cross domain there and make sure this url is also included in GA4 as an domain for the property
