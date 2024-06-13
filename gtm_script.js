@@ -36,6 +36,7 @@ function getLinkerParameter() {
 }
 
 function updateUrls() {
+ //updates all url's in urlsToUpdate with the _gl params
   var linkerParameter = getLinkerParameter();
   if (!linkerParameter) {
     return;
